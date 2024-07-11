@@ -8,7 +8,10 @@ variable "resource_group_name" {
   description = "A container that holds related resources for an Azure solution"
   default     = ""
 }
-
+variable "ServiceObjective" {
+  description = "The Service Tier S0, S1, S2, S3, P1, P2, P4,     P6, P11 and ElasticPool"
+  default     = "S0"
+}
 variable "storage_account_name" {
   description = "The name of the storage account name"
   default     = null
